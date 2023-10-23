@@ -20,10 +20,21 @@
     <div>
       <div>Towary:</div>
       <div v-for="item in invoice.items">
-        <div>Ilość przedmiotów {{ item.quantity }}</div>
-        <div>{{ item.name }} - {{ item.price }} zł</div>
-        <div>VAT: {{ item.vat }}%</div>
+        <div>Nazwa: {{ item.name }}</div>
+        <div>Ilość przedmiotów: {{ item.quantity }}</div>
+        <div>Cena Netto: {{ item.price }} zł</div>
+        <div>Wartość netto:{{ item.price * item.quantity }} zł</div>
+        <div>Stawka VAT: {{ item.vat }}%</div>
+        <div>
+          Kwota VAT:
+          {{ Math.round(item.price - (item.price * item.vat) / 100) }} zł
+        </div>
+        <div>
+          Cena Brutto: {{ item.price + (item.price * item.vat) / 100 }} zł
+        </div>
+        <br />
       </div>
+      <div>Cena wszystkich przedmiotów: {{ totalPrice }}</div>
     </div>
   </div>
   <div v-else>No invoice found</div>
@@ -47,8 +58,17 @@ const getConvertPaymentData = () => {
   return getDateFormat(invoice.value.payment_date);
 };
 
+const totalPrice = computed(() => {
+  if (!invoice || !invoice.value) return 0;
+
+  return invoice.value.items.reduce((acc, item) => {
+    return acc + Math.round(item.price + (item.price * item.vat) / 100);
+  }, 0);
+});
+
 computed(() => [getConvertDate]);
 computed(() => [getConvertPaymentData]);
+computed(() => [totalPrice]);
 </script>
 
 <style scoped>

@@ -30,56 +30,56 @@
       ]
     },
     {
-      "id": "2",
-      "date": 1698068782,
-      "payment_date": 1698068782,
+      "payment_date": 1696377600,
       "company": {
-        "name": "Company 2",
-        "address": "Address 2",
-        "nip": "1234567890"
+        "name": "sghfg",
+        "address": "sdfgsdf",
+        "nip": "45634678"
       },
       "customer": {
-        "name": "Customer 2",
-        "address": "Address 2",
-        "nip": "0987654321"
+        "name": "fdhfj",
+        "address": "fghdfh",
+        "nip": "5674567"
       },
       "items": [
         {
-          "name": "Item 1",
-          "quantity": 1,
-          "price": 100,
+          "name": "dfghfgh",
+          "price": 356,
+          "quantity": 22,
+          "vat": 23
+        }
+      ],
+      "date": 1698078121,
+      "id": "456346781698078121"
+    },
+    {
+      "payment_date": 1697760000,
+      "company": {
+        "name": "fghfdhg",
+        "address": "dfghfd",
+        "nip": "345345"
+      },
+      "customer": {
+        "name": "dfgsd",
+        "address": "dfghdfgh",
+        "nip": "45634"
+      },
+      "items": [
+        {
+          "name": "jaja",
+          "price": 23,
+          "quantity": 2,
           "vat": 23
         },
         {
-          "name": "Item 2",
-          "quantity": 2,
-          "price": 10,
-          "vat": 23
-        }
-      ]
-    },
-    {
-      "payment_date": 1695772800,
-      "company": {
-        "name": "sdf",
-        "address": "sdfs",
-        "nip": "234235"
-      },
-      "customer": {
-        "name": "sdfsdf",
-        "address": "4e564",
-        "nip": "23423"
-      },
-      "items": [
-        {
-          "name": "asdasd",
-          "price": 324,
-          "quantity": 3,
-          "vat": 54
+          "name": "sdasd",
+          "price": 456,
+          "quantity": 1,
+          "vat": 34
         }
       ],
-      "date": 1698077518,
-      "id": "2342351698077518"
+      "date": 1698078237,
+      "id": "3453451698078237"
     }
   ]
 }
