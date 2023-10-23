@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db": "json-server --watch db.json --port 8080"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@vite-pwa/nuxt": "^0.1.1",
+    "json-server": "^0.17.4",
+    "nuxt": "^3.8.0",
+    "vue": "^3.3.6",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "invoices": [
+    {
+      "id": "1",
+      "date": 1698068782,
+      "payment_date": 1698068782,
+      "company": {
+        "name": "Company 1",
+        "address": "Address 1",
+        "nip": "1234567890"
+      },
+      "customer": {
+        "name": "Customer 1",
+        "address": "Address 1",
+        "nip": "0987654321"
+      },
+      "items": [
+        {
+          "name": "Item 1",
+          "quantity": 1,
+          "price": 100,
+          "vat": 23
+        },
+        {
+          "name": "Item 2",
+          "quantity": 2,
+          "price": 10,
+          "vat": 23
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "date": 1698068782,
+      "payment_date": 1698068782,
+      "company": {
+        "name": "Company 2",
+        "address": "Address 2",
+        "nip": "1234567890"
+      },
+      "customer": {
+        "name": "Customer 2",
+        "address": "Address 2",
+        "nip": "0987654321"
+      },
+      "items": [
+        {
+          "name": "Item 1",
+          "quantity": 1,
+          "price": 100,
+          "vat": 23
+        },
+        {
+          "name": "Item 2",
+          "quantity": 2,
+          "price": 10,
+          "vat": 23
+        }
+      ]
+    }
+  ]
+}
