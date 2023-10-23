@@ -57,6 +57,29 @@
           "vat": 23
         }
       ]
+    },
+    {
+      "payment_date": 1695772800,
+      "company": {
+        "name": "sdf",
+        "address": "sdfs",
+        "nip": "234235"
+      },
+      "customer": {
+        "name": "sdfsdf",
+        "address": "4e564",
+        "nip": "23423"
+      },
+      "items": [
+        {
+          "name": "asdasd",
+          "price": 324,
+          "quantity": 3,
+          "vat": 54
+        }
+      ],
+      "date": 1698077518,
+      "id": "2342351698077518"
     }
   ]
 }
